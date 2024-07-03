@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block title %}
+LaLiga
+{% endblock %}
+
+{% block main %}
+<h3 id="titulo">
+    <a href="/"><img class="soccer" src="/static/videos/Laliga.png" height="30px" class="flecha"></a>
+    La Liga
+    <nav class="navbar" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="derechazo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Leagues
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="dropdown">
+                                                  <li><a class="dropdown-item" href="/laliga">LaLiga</a></li>
+                      <li><a class="dropdown-item" href="/premiere">Premiere</a></li>
+                      <li><a class="dropdown-item" href="/seriea">Serie A</a></li>
+                      <li><a class="dropdown-item" href="/one">League One</a></li>
+                      <li><a class="dropdown-item" href="/bundes">Bundesliga</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/login">Login</a></li>
+                      <li><a class="dropdown-item" href="/register">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</h3>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        table {
+            width: 75%;
+            position: center;
+            border-collapse: collapse;
+            margin: 0px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #1c1c1c;
+        }
+        tr:nth-child(even) {
+            background-color: #1e1e1e;
+        }
+        .last5 {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+        }
+        .last5 span {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        .win { background-color: #4caf50; }
+        .draw { background-color: #ffeb3b; }
+        .loss { background-color: #f44336; }
+    </style>
+</head>
+<body>
+<div class="tablita">
+    <table>
+        <thead>
+            <tr>
+                <th>Pos</th>
+                <th>Club</th>
+                <th>PJ</th>
+                <th>G</th>
+                <th>E</th>
+                <th>P</th>
+                <th>GF</th>
+                <th>GC</th>
+                <th>DG</th>
+                <th>Pts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+
+                <td> {{ row.Posicion }} </td>
+                <td> {{ row.Club }} </td>
+                <td> {{ row.Partidos_Jugados }} </td>
+                <td> {{ row.Ganados }} </td>
+                <td> {{ row.Empates }} </td>
+                <td> {{ row.Perdidos }} </td>
+                <td> {{ row.Goles_A_Favor }} </td>
+                <td> {{ row.Goles_Concebidos }} </td>
+                <td> {{ row.Diferencia_De_Goles }} </td>
+                <td> {{ row.Puntos }} </td>
+            </tr>
+
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('derechazo');
+    const button = document.getElementById('titulo')
+
+    toggleButton.addEventListener('click', function () {
+        titulo.classList.toggle('large')
+    })
+</script>
+
+{% endblock %}

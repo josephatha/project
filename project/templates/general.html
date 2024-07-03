@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block title %}
+General
+{% endblock %}
+
+{% block main %}
+<video id="background-video" muted loop autoplay playsinline>
+    <source src="/static/videos/MESSI.mp4" type="video/mp4">
+</video>
+
+<br><br><br><br>
+
+<nav class="navbar" id="fubol">
+    <div class="container-fluid">
+        <img src="/static/videos/white.png" alt="Logo" width="30" height="24" class="soccer">
+        <h3 class="title">Soccer Hub</h3>
+
+            <a href="/logout">Log Out</a>
+
+
+    </div>
+  </nav>
+<br><br><br><br>
+
+
+<div class="dis">
+    <div class="card">
+        <img src="/static/videos/barca.jpg" alt="laliga">
+        <div class="card-content">
+            <h2>
+                La Liga
+            </h2>
+            <p>
+                <strong>
+                    <a href="/laliga">
+                        <button type="submit" class="btn btn-light">Liga</button>
+                    </a>
+                </strong>
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/static/videos/premis.webp" alt="laliga">
+        <div class="card-content">
+            <h2>
+                Premiere
+            </h2>
+            <p>
+                <strong>
+                    <a href="/premiere">
+                        <button type="submit" class="btn btn-light">Premiere</button>
+                    </a>
+                </strong>
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/static/videos/asd.webp" alt="laliga">
+        <div class="card-content">
+            <h2>
+                Serie A
+            </h2>
+            <p>
+                <strong>
+                    <a href="/seriea">
+                        <button type="submit" class="btn btn-light">SerieA</button>
+                    </a>
+                </strong>
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/static/videos/uno.png" alt="laliga">
+        <div class="card-content">
+            <h2>
+                One
+            </h2>
+            <p>
+                <strong>
+                    <a href="/one">
+                        <button type="submit" class="btn btn-light">One</button>
+                    </a>
+                </strong>
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/static/videos/bUndeS.jpg" alt="laliga">
+        <div class="card-content">
+            <h2>
+                Bundes
+            </h2>
+            <p>
+                <strong>
+                    <a href="/bundes">
+                        <button type="submit" class="btn btn-light">Bundes</button>
+                    </a>
+                </strong>
+            </p>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+<br>
+
+<div id="ultimo">
+    <h4>Soccerhub</h4>
+    <h6 id="credito">Joseph Atha & Peter Atha</h6>
+</div>
+{% endblock %}

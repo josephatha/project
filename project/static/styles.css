@@ -1,0 +1,356 @@
+
+.primary {
+    background-color: #06D001;
+    color: #fff;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.navbar {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: %;
+    top: 0;
+    z-index: 1;
+}
+
+#background-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: black;
+    overflow-x: hidden; /* Ensure no horizontal scroll */
+}
+
+.primary {
+    background-color: #06D001;
+    color: #fff;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.title {
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.title:hover {
+    transform: scale(1.1);
+}
+
+.soccer {
+    transition: transform 0.2s ease-in-out;
+}
+
+.soccer:hover {
+    transform: scale(1.1);
+}
+
+
+#dropdown {
+    color: #fff;
+    text-align: right;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+#dropdown:hover {
+    transform: scale(1.005);
+}
+
+#abajo {
+    color: #fff;
+    text-align: right;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    left: -25px;
+}
+
+#abajo:hover {
+    transform: scale(1.005);
+}
+
+#rightt {
+    text-align: right;
+}
+
+
+/* CSS to make the dropdown menu smaller */
+.custom-dropdown-menu {
+    width: 150px; /* Adjust the width as needed */
+    transform: translateX(845%);
+}
+
+.custom-dropdown-menu .dropdown-item {
+    padding: 5px 10px; /* Adjust the padding as needed */
+}
+
+/* Optionally, style the dropdown items to make them look more compact */
+.custom-dropdown-menu .dropdown-item {
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.collapse navbar-collapse {
+    color: #fff;
+    background-color: #fff;
+}
+
+.navbar-nav .nav-item .dropdown-menu {
+    background-color: black;  /* Optional: Set background to black to make white text visible */
+    color: white;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: white;
+    background-color: gray;  /* Optional: Set a hover background color */
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30"><rect width="30" height="4" fill="white" /><rect y="13" width="30" height="4" fill="white" /><rect y="26" width="30" height="4" fill="white" /></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 1.0em;
+    height: 1.0em;
+}
+
+
+#titulo {
+    color:#fff;
+    background-color: #00008b;
+    padding: 1.0rem;
+    transition: height 0.3s ease;
+}
+#titulo.large{
+    padding: 2.0rem;
+}
+
+#titulo2 {
+    color:#fff;
+    background-color: #808080;
+    padding: 1.0rem;
+}
+
+#titulo2.large {
+    padding: 2.0rem;
+}
+
+#titulo3 {
+    color:#fff;
+    background-color: #006400;
+    padding: 1.0rem;
+}
+
+#titulo3.large {
+    padding: 2.0rem;
+}
+
+#titulo4 {
+    color:#fff;
+    background-color: #301934;
+    padding: 1.0rem;
+}
+
+#titulo4.large{
+    padding: 2.0rem;
+}
+
+#titulo5 {
+    color:#fff;
+    background-color: #8B8000;
+    padding: 1.0rem;
+}
+
+#titulo5.large {
+    padding: 2.0rem;
+}
+
+.flecha {
+    position: relative;
+    bottom: 3px;
+}
+
+#derechazo {
+    position: relative;
+    left: 1450px;
+    top: 5px;
+}
+
+.tablita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 12rem;
+    height: 24rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: aliceblue;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 12rem;
+      height: 24rem;
+      top: 0;
+      left: 0;
+      opacity: 0.9;
+      transition: opacity .2s ease-out;
+    }
+
+
+    h2 {
+      position: absolute;
+      inset: auto auto 30px 30px;
+      margin: 0;
+      transition: inset .3s .3s ease-out;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+
+    p, a {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity .3s ease-out;
+    }
+
+
+    p {
+      inset: auto auto 80px 30px;
+    }
+
+
+    a {
+      inset: auto auto 40px 30px;
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+
+    &:hover h2 {
+      inset: auto auto 220px 30px;
+      transition: opacity 0.5s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+
+    &:hover p, &:hover a {
+      opacity: 1;
+      transition: opacity .5s .1s ease-in;
+    }
+
+
+    &:hover img {
+      transition: opacity .3s ease-in;
+      opacity: 1;
+    }
+
+
+  }
+
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+.dis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.tit {
+    background-color: #00008b;
+}
+
+.posi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#correction {
+    position: relative;
+    left: 735px;
+}
+
+#fubol {
+    color: #fff;
+    background-color: rgba(0, 0, 139, 0.5);
+    padding: 1.0rem;
+    transition: height 0.3s ease;
+}
+
+#pelotita {
+    position: relative;
+    right: 42rem;
+}
+
+#ultimo {
+    color: #fff;
+    background-color: rgba(0, 0, 139, 0.5);
+    padding: 1.0rem;
+    margin-bottom: 0;
+
+}
+
+#credito {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
